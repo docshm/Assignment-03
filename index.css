@@ -1,0 +1,102 @@
+body {
+  background-color: #ffe8d6;
+}
+
+div {
+  padding: 0%;
+  margin: 0px 50px 10px 0px;
+  width: 550px;
+  height: 650px;
+  float: left;
+}
+
+.img-b,
+.img-c {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.img-b {
+  z-index: 1;
+}
+
+.img-c {
+  transform: rotateY(180deg);
+}
+
+.img-a {
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.img-a:hover {
+  transform: rotateY(180deg);
+}
+
+img {
+  width: 550px;
+  height: 650px;
+}
+header {
+  text-align: center;
+  font-size: 1.8em;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+article {
+  font-family: "Parisienne", cursive;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.8em;
+  font-family: "Parisienne", cursive;
+  font-weight: bold;
+  color: chocolate;
+}
+
+label {
+  padding: 1px 5px 1px 5px;
+  border: 1px solid blueviolet;
+  width: 100px;
+  height: 30px;
+  background-color: darkseagreen;
+  font-style: italic;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  transition: 2s;
+}
+
+label:hover {
+  padding: 1px 10px 1px 10px;
+  border: 3px dotted gold;
+  width: 250px;
+  height: 60px;
+  background-color: black;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Parisienne", cursive;
+  box-shadow: 2px 3px 4px 10px blue;
+  color: azure;
+}
+#show,
+#content {
+  display: none;
+}
+#show:checked ~ #content {
+  display: block;
+}
+
+ul {
+  margin: 5% 0% 0% 50%;
+  font-size: 1.4em;
+  font-family: "Parisienne", cursive;
+  font-weight: bold;
+}
